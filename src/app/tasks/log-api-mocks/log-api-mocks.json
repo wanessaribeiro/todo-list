@@ -1,0 +1,90 @@
+{
+  "uuid": "3c4554e4-08ce-4734-8acb-a7761d441bfb",
+  "lastMigration": 27,
+  "name": "Log api mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "3f3af768-dbe4-4f82-857f-d8d7e96b4d6d",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "errors",
+      "responses": [
+        {
+          "uuid": "77653f25-e56e-4deb-bf57-b98d0935362c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "3f3af768-dbe4-4f82-857f-d8d7e96b4d6d"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
